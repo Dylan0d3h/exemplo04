@@ -88,6 +88,12 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .marketing-black:hover .product,
+  .marketing-white:hover .product {
+    animation: fade-in 2s;
+    animation-fill-mode: forwards;
+  }
   
   .marketing-white {
     background-color: #fff;
@@ -116,7 +122,8 @@
   
   .product {
     width: 30%;
-    animation: fade-in 3s;
+    opacity: 0;
+    animation: fade-out 2s;
   }
   
   .know-more {
