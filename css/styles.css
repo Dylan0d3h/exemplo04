@@ -9,6 +9,7 @@
   body {
     margin: 0;
     font-size: 1rem;
+    animation: fade-in 0.9s;
   }
   
   header {
@@ -30,6 +31,7 @@
   #app-title {
     font-family: "regular";
     margin: 0;
+    animation: rotation 3s infinite linear;
   }
   
   #about,
@@ -72,13 +74,22 @@
   
   #slogan span {
     font-family: "regular";
-    font-size: 3.8rem;
+    font-size: 3.5rem;
+    letter-spacing: -5;
+    opacity: 0;
+    animation: fade-in 500ms;
+    animation-fill-mode: forwards;
+    animation-delay: calc(50ms *var(--i));
   }
   
   #hero-text p {
     text-align: center;
     font-family: "italic";
     font-size: 3rem;
+    opacity: 0;
+    animation: fade-in 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
   }
   
   .marketing-black,
